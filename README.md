@@ -117,4 +117,4 @@ conflict-rag-pilot/
 
 ## 8. Tech
 
-Python · PyTorch · HuggingFace Transformers · bitsandbytes (4bit) · matplotlib · Colab (T4)
+Python · PyTorch · HuggingFace Transformers · Colab (T4)

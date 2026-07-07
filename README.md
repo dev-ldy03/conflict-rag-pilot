@@ -113,6 +113,9 @@ conflict-rag-pilot/
 │   └── conflict_eval.jsonl     # 직접 설계한 24케이스 평가셋
 ├── results/
 │   └── results.jsonl           # 케이스별 응답·entropy·행동분류·오류태그
+├── review/
+│   ├── make_review.py          # 검수 테이블 생성 스크립트
+│   └── review.html             # 24케이스 전수 검수 기록 (케이스별 검수 메모도 기록되어 있음)
 └── figures/
     ├── fig_entropy_hist.png    # 맞은/틀린 케이스 entropy 분포
     └── fig_recency_hist.png    # temporal 케이스 연도별 실패율

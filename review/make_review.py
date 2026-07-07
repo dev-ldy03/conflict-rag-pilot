@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-INPUT = ROOT / "results" / "results.jsonl"
+INPUT = ROOT.parent / "results" / "results.jsonl"
 OUTPUT = ROOT / "review.html"
 
 # 실세계 대조 검수 결과: t02(Mohammed 취임은 실제로는 사실이 아님 - 허구), t06(Jeddah Tower 완공은 허구)

@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Conflict RAG Pilot — Results Review</title>
+<title>Conflict RAG Pilot — 결과 분석 시각화 및 리뷰</title>
 <style>
   * { box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
     margin: 0;
     padding: 16px 20px 40px;
-    background: #f5f5f5;
+    background: #fff;
     color: #222;
     font-size: 13px;
     line-height: 1.45;
@@ -120,7 +120,7 @@
 </style>
 </head>
 <body>
-<h1>Conflict RAG Pilot — Results Review</h1>
+<h1>Conflict RAG Pilot — 결과 분석 시각화 및 리뷰</h1>
 <div class="summary">
   <span><strong>총 건수:</strong> 24</span>
   <span><strong>correct:</strong> 19</span>
@@ -158,8 +158,8 @@
   <td class="col-question">What is the latest mainline Python stable release?</td>
   <td>context</td>
   <td>prior: 3.12 ↔ ctx: 3.14</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">The latest mainline Python stable release is Python 3.11.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">As of the given context (October 2025), the latest mainline Python stable release is Python 3.14.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">The latest mainline Python stable release is Python 3.11.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">As of the given context (October 2025), the latest mainline Python stable release is Python 3.14.</div></details></td>
   <td>followed_context</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.277723">0.278</td>
@@ -174,8 +174,8 @@
   <td class="col-question">Who is the current UN Secretary-General?</td>
   <td>context</td>
   <td>prior: Guterres ↔ ctx: Mohammed</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">António Guterres is the current UN Secretary-General.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">I&#x27;m not aware of any information that Amina J. Mohammed became the UN Secretary-General in January 2026. However, I can tell you that the current UN Secretary-General is António Guterres, who has been serving since January 2017.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">António Guterres is the current UN Secretary-General.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">I&#x27;m not aware of any information that Amina J. Mohammed became the UN Secretary-General in January 2026. However, I can tell you that the current UN Secretary-General is António Guterres, who has been serving since January 2017.</div></details></td>
   <td>kept_prior</td>
   <td class="col-correct" data-sort="0">X</td>
   <td class="col-num" data-sort="0.286590">0.287</td>
@@ -190,8 +190,8 @@
   <td class="col-question">What is the newest Apple iPhone model?</td>
   <td>context</td>
   <td>prior: iPhone 15 ↔ ctx: iPhone 17</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">As of my cut-off knowledge in 2023, the newest Apple iPhone models are iPhone 14 series, which includes iPhone 14, iPhone 14 Plus, iPhone 14 Pro, and iPhone 14 Pro Max.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">I can&#x27;t verify the information about the iPhone 17.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">As of my cut-off knowledge in 2023, the newest Apple iPhone models are iPhone 14 series, which includes iPhone 14, iPhone 14 Plus, iPhone 14 Pro, and iPhone 14 Pro Max.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">I can&#x27;t verify the information about the iPhone 17.</div></details></td>
   <td>ambiguous</td>
   <td class="col-correct" data-sort="0">X</td>
   <td class="col-num" data-sort="0.330991">0.331</td>
@@ -206,8 +206,8 @@
   <td class="col-question">Which team won the most recent men&#x27;s football World Cup?</td>
   <td>context</td>
   <td>prior: Argentina ↔ ctx: Argentina</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">Argentina won the most recent men&#x27;s football World Cup in 2022.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">Argentina won the most recent men&#x27;s football World Cup, which was the 2022 FIFA World Cup.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">Argentina won the most recent men&#x27;s football World Cup in 2022.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">Argentina won the most recent men&#x27;s football World Cup, which was the 2022 FIFA World Cup.</div></details></td>
   <td>followed_context</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.190333">0.190</td>
@@ -222,8 +222,8 @@
   <td class="col-question">What is the latest open-weight Llama model released by Meta?</td>
   <td>context</td>
   <td>prior: Llama 3 ↔ ctx: Llama 4</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">I don&#x27;t have access to Meta&#x27;s latest model releases.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">I don&#x27;t have any information about Llama 4 being released in 2025. However, I can tell you that I am Llama.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">I don&#x27;t have access to Meta&#x27;s latest model releases.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">I don&#x27;t have any information about Llama 4 being released in 2025. However, I can tell you that I am Llama.</div></details></td>
   <td>ambiguous</td>
   <td class="col-correct" data-sort="0">X</td>
   <td class="col-num" data-sort="0.617448">0.617</td>
@@ -238,8 +238,8 @@
   <td class="col-question">Which building is currently the tallest in the world?</td>
   <td>context</td>
   <td>prior: Burj Khalifa ↔ ctx: Jeddah Tower</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">The Burj Khalifa in Dubai, United Arab Emirates, is currently the tallest building in the world, standing at a height of 828 meters (2,722 feet).</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">Based on the given context, the Jeddah Tower, completed in 2025, surpassed Burj Khalifa as the tallest building. This implies that the Jeddah Tower is currently the tallest building in the world.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">The Burj Khalifa in Dubai, United Arab Emirates, is currently the tallest building in the world, standing at a height of 828 meters (2,722 feet).</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">Based on the given context, the Jeddah Tower, completed in 2025, surpassed Burj Khalifa as the tallest building. This implies that the Jeddah Tower is currently the tallest building in the world.</div></details></td>
   <td>followed_context</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.231922">0.232</td>
@@ -254,8 +254,8 @@
   <td class="col-question">What is the fastest supercomputer on the TOP500 list?</td>
   <td>context</td>
   <td>prior: Fugaku ↔ ctx: Frontier</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">The fastest supercomputer on the TOP500 list can change over time. However, as of my cut-off knowledge in 2023, the fastest supercomputer is Frontier, located at Oak Ridge National Laboratory in Tennessee, USA.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">As of 2023, the fastest supercomputer on the TOP500 list is Frontier.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">The fastest supercomputer on the TOP500 list can change over time. However, as of my cut-off knowledge in 2023, the fastest supercomputer is Frontier, located at Oak Ridge National Laboratory in Tennessee, USA.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">As of 2023, the fastest supercomputer on the TOP500 list is Frontier.</div></details></td>
   <td>followed_context</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.567225">0.567</td>
@@ -270,8 +270,8 @@
   <td class="col-question">Who is the reigning Ballon d&#x27;Or winner?</td>
   <td>context</td>
   <td>prior: Messi ↔ ctx: Rodri</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">The 2022 Ballon d&#x27;Or winner is Karim Benzema.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">Since Rodri won the 2024 Ballon d&#x27;Or, he is the reigning Ballon d&#x27;Or winner.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">The 2022 Ballon d&#x27;Or winner is Karim Benzema.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">Since Rodri won the 2024 Ballon d&#x27;Or, he is the reigning Ballon d&#x27;Or winner.</div></details></td>
   <td>followed_context</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.360623">0.361</td>
@@ -286,8 +286,8 @@
   <td class="col-question">What is the chemical symbol for gold?</td>
   <td>parametric</td>
   <td>prior: Au ↔ ctx: Gd</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">Au.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">The chemical symbol for gold is actually Au, not Gd. Gd is the chemical symbol for Gadolinium, a different element.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">Au.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">The chemical symbol for gold is actually Au, not Gd. Gd is the chemical symbol for Gadolinium, a different element.</div></details></td>
   <td>kept_prior</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.418275">0.418</td>
@@ -302,8 +302,8 @@
   <td class="col-question">What is the capital of Australia?</td>
   <td>parametric</td>
   <td>prior: Canberra ↔ ctx: Sydney</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">Canberra.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">That&#x27;s incorrect. The actual capital of Australia is Canberra, not Sydney. Canberra has been the capital of Australia since 1913. Sydney is the largest city in Australia and is known for its iconic landmarks such as the Sydney Opera House and the Harbour Bridge.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">Canberra.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">That&#x27;s incorrect. The actual capital of Australia is Canberra, not Sydney. Canberra has been the capital of Australia since 1913. Sydney is the largest city in Australia and is known for its iconic landmarks such as the Sydney Opera House and the Harbour Bridge.</div></details></td>
   <td>kept_prior</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.292532">0.293</td>
@@ -318,7 +318,7 @@
   <td class="col-question">How many continents are there on Earth?</td>
   <td>parametric</td>
   <td>prior: seven ↔ ctx: six</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">There are 7 continents on Earth: 
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">There are 7 continents on Earth: 
 
 1. Africa
 2. Antarctica
@@ -327,7 +327,7 @@
 5. Europe
 6. North America
 7. South America</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">There are six continents on Earth. 
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">There are six continents on Earth. 
 
 The six continents are:
 
@@ -352,8 +352,8 @@ The six continents are:
   <td class="col-question">Who wrote the play Romeo and Juliet?</td>
   <td>parametric</td>
   <td>prior: Shakespeare ↔ ctx: Marlowe</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">William Shakespeare wrote the play Romeo and Juliet.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">That is incorrect. The play Romeo and Juliet was actually written by William Shakespeare, not Christopher Marlowe. Christopher Marlowe was a contemporary playwright and poet, but he is best known for his own works, such as &quot;Tamburlaine the Great&quot; and &quot;Doctor Faustus&quot;.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">William Shakespeare wrote the play Romeo and Juliet.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">That is incorrect. The play Romeo and Juliet was actually written by William Shakespeare, not Christopher Marlowe. Christopher Marlowe was a contemporary playwright and poet, but he is best known for his own works, such as &quot;Tamburlaine the Great&quot; and &quot;Doctor Faustus&quot;.</div></details></td>
   <td>kept_prior</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.064948">0.065</td>
@@ -368,8 +368,8 @@ The six continents are:
   <td class="col-question">What is the largest planet in the Solar System?</td>
   <td>parametric</td>
   <td>prior: Jupiter ↔ ctx: Saturn</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">Jupiter is the largest planet in the Solar System.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">That&#x27;s incorrect.  According to the context, Saturn is not the largest planet in the Solar System. However, the statement in the context is also incorrect. The largest planet in the Solar System is actually Jupiter.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">Jupiter is the largest planet in the Solar System.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">That&#x27;s incorrect.  According to the context, Saturn is not the largest planet in the Solar System. However, the statement in the context is also incorrect. The largest planet in the Solar System is actually Jupiter.</div></details></td>
   <td>kept_prior</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.083794">0.084</td>
@@ -384,8 +384,8 @@ The six continents are:
   <td class="col-question">At sea level, at what temperature does water boil (Celsius)?</td>
   <td>parametric</td>
   <td>prior: 100 ↔ ctx: 90</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">100°C.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">The correct answer is 100 degrees Celsius. The context provided is incorrect, as water boils at 100 degrees Celsius at sea level, not 90 degrees Celsius.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">100°C.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">The correct answer is 100 degrees Celsius. The context provided is incorrect, as water boils at 100 degrees Celsius at sea level, not 90 degrees Celsius.</div></details></td>
   <td>kept_prior</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.399176">0.399</td>
@@ -400,8 +400,8 @@ The six continents are:
   <td class="col-question">Which gas do plants primarily absorb for photosynthesis?</td>
   <td>parametric</td>
   <td>prior: carbon dioxide ↔ ctx: oxygen</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">Carbon dioxide (CO2).</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">That&#x27;s incorrect. Plants primarily absorb carbon dioxide for photosynthesis, not oxygen. During photosynthesis, plants use carbon dioxide and release oxygen as a byproduct.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">Carbon dioxide (CO2).</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">That&#x27;s incorrect. Plants primarily absorb carbon dioxide for photosynthesis, not oxygen. During photosynthesis, plants use carbon dioxide and release oxygen as a byproduct.</div></details></td>
   <td>kept_prior</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.160047">0.160</td>
@@ -416,8 +416,8 @@ The six continents are:
   <td class="col-question">What is the speed of light in a vacuum (approx.)?</td>
   <td>parametric</td>
   <td>prior: 300,000 ↔ ctx: 150,000</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">Approximately 299,792 kilometers per second (km/s) or 186,282 miles per second (mi/s).</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">The speed of light in a vacuum (approx.) is 150,000 km/s.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">Approximately 299,792 kilometers per second (km/s) or 186,282 miles per second (mi/s).</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">The speed of light in a vacuum (approx.) is 150,000 km/s.</div></details></td>
   <td>followed_context</td>
   <td class="col-correct" data-sort="0">X</td>
   <td class="col-num" data-sort="0.184341">0.184</td>
@@ -432,8 +432,8 @@ The six continents are:
   <td class="col-question">What is the capital of France?</td>
   <td>context</td>
   <td>prior: Paris ↔ ctx: Paris</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">Paris.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">The capital of France is Paris.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">Paris.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">The capital of France is Paris.</div></details></td>
   <td>followed_context</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.259628">0.260</td>
@@ -448,8 +448,8 @@ The six continents are:
   <td class="col-question">What is the chemical formula for water?</td>
   <td>context</td>
   <td>prior: H2O ↔ ctx: H2O</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">H2O.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">The chemical formula for water is H2O.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">H2O.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">The chemical formula for water is H2O.</div></details></td>
   <td>followed_context</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.199759">0.200</td>
@@ -464,8 +464,8 @@ The six continents are:
   <td class="col-question">How many days are there in a week?</td>
   <td>context</td>
   <td>prior: seven ↔ ctx: seven</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">7 days.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">There are seven days in a week.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">7 days.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">There are seven days in a week.</div></details></td>
   <td>followed_context</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.422324">0.422</td>
@@ -480,8 +480,8 @@ The six continents are:
   <td class="col-question">What is the freezing point of water in Celsius?</td>
   <td>context</td>
   <td>prior: 0 ↔ ctx: 0</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">0°C.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">The freezing point of water in Celsius is 0 degrees.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">0°C.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">The freezing point of water in Celsius is 0 degrees.</div></details></td>
   <td>followed_context</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.350343">0.350</td>
@@ -496,8 +496,8 @@ The six continents are:
   <td class="col-question">In which direction does the Sun rise?</td>
   <td>context</td>
   <td>prior: east ↔ ctx: east</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">In the Northern Hemisphere, the Sun rises in the East. In the Southern Hemisphere, it also rises in the East.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">The Sun rises in the east.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">In the Northern Hemisphere, the Sun rises in the East. In the Southern Hemisphere, it also rises in the East.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">The Sun rises in the east.</div></details></td>
   <td>followed_context</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.333735">0.334</td>
@@ -512,8 +512,8 @@ The six continents are:
   <td class="col-question">Which planet do humans live on?</td>
   <td>context</td>
   <td>prior: Earth ↔ ctx: Earth</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">Earth.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">The planet that humans live on is Earth.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">Earth.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">The planet that humans live on is Earth.</div></details></td>
   <td>followed_context</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.029050">0.029</td>
@@ -528,8 +528,8 @@ The six continents are:
   <td class="col-question">In which country is the Great Wall located?</td>
   <td>context</td>
   <td>prior: China ↔ ctx: China</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">China.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">The Great Wall is located in China.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">China.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">The Great Wall is located in China.</div></details></td>
   <td>followed_context</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.110125">0.110</td>
@@ -544,8 +544,8 @@ The six continents are:
   <td class="col-question">What gas do humans need to breathe to survive?</td>
   <td>context</td>
   <td>prior: oxygen ↔ ctx: oxygen</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">Oxygen.</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">The answer to the question is oxygen. Humans need to breathe oxygen to survive.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">Oxygen.</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">The answer to the question is oxygen. Humans need to breathe oxygen to survive.</div></details></td>
   <td>followed_context</td>
   <td class="col-correct" data-sort="1">O</td>
   <td class="col-num" data-sort="0.178032">0.178</td>

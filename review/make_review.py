@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 INPUT = ROOT.parent / "results" / "results.jsonl"
 OUTPUT = ROOT / "review.html"
+PAGE_TITLE = "Conflict RAG Pilot — 결과 분석 시각화 및 리뷰"
 
 # 실세계 대조 검수 결과: t02(Mohammed 취임은 실제로는 사실이 아님 - 허구), t06(Jeddah Tower 완공은 허구)
 # t03(iPhone 17), t05(Llama 4)는 실제 출시된 사실로 확인됨 (2025년 실제 릴리스).
@@ -133,8 +134,8 @@ def build_row(row: dict) -> str:
   <td class="col-question">{esc(row['question'])}</td>
   <td>{esc(row['gold'])}</td>
   <td>{esc(answers)}</td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">{esc(row['parametric_output'])}</div></details></td>
-  <td class="col-output"><details><summary>show</summary><div class="output-text">{esc(row['context_output'])}</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">{esc(row['parametric_output'])}</div></details></td>
+  <td class="col-output"><details><summary>더보기</summary><div class="output-text">{esc(row['context_output'])}</div></details></td>
   <td>{esc(behavior)}</td>
   <td class="col-correct" data-sort="{1 if correct else 0}">{'O' if correct else 'X'}</td>
   <td class="col-num" data-sort="{p_ent:.6f}">{fmt_ent(p_ent)}</td>
@@ -158,14 +159,14 @@ def build_html(rows: list[dict]) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Conflict RAG Pilot — Results Review</title>
+<title>{esc(PAGE_TITLE)}</title>
 <style>
   * {{ box-sizing: border-box; }}
   body {{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
     margin: 0;
     padding: 16px 20px 40px;
-    background: #f5f5f5;
+    background: #fff;
     color: #222;
     font-size: 13px;
     line-height: 1.45;
@@ -275,7 +276,7 @@ def build_html(rows: list[dict]) -> str:
 </style>
 </head>
 <body>
-<h1>Conflict RAG Pilot — Results Review</h1>
+<h1>{esc(PAGE_TITLE)}</h1>
 <div class="summary">
   <span><strong>총 건수:</strong> {total}</span>
   <span><strong>correct:</strong> {correct_count}</span>
